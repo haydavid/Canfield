@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{F422CD5D-2771-4721-BE9B-10BB7C361E38}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>SculptMyDream</RootNamespace>
+    <AssemblyName>SculptMyDream</AssemblyName>
+    <RanorexVersion>7.1</RanorexVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <RanorexTargetsPath>$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <projectdefaultrepository>14b50637-25db-41cb-80e2-c3870cdc7088</projectdefaultrepository>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Core" />
+    <Reference Include="Ranorex.Plugin.Cef" />
+    <Reference Include="Ranorex.Plugin.ChromeWeb" />
+    <Reference Include="Ranorex.Plugin.Flex" />
+    <Reference Include="Ranorex.Plugin.Java" />
+    <Reference Include="Ranorex.Plugin.Mobile" />
+    <Reference Include="Ranorex.Plugin.MozillaWeb" />
+    <Reference Include="Ranorex.Plugin.Msaa" />
+    <Reference Include="Ranorex.Plugin.Office" />
+    <Reference Include="Ranorex.Plugin.Qt" />
+    <Reference Include="Ranorex.Plugin.RawText" />
+    <Reference Include="Ranorex.Plugin.Sap" />
+    <Reference Include="Ranorex.Plugin.Uia" />
+    <Reference Include="Ranorex.Plugin.Web" />
+    <Reference Include="Ranorex.Plugin.WebDriver" />
+    <Reference Include="Ranorex.Plugin.Win32" />
+    <Reference Include="Ranorex.Plugin.WinForms" />
+    <Reference Include="Ranorex.Plugin.Wpf" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>621bcde9-d818-4b8b-9e8b-dfc5cb0a0aa5</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>9709f65f-a4b3-4da2-93ad-747257a59ee1</id>
+    </Compile>
+    <Compile Include="Recording1.cs">
+      <BoundTo>b6c2a0e5-f33f-4af4-b7ae-65d03e79c1f8</BoundTo>
+      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>fe57e7b6-eed9-4010-b591-fd036345ef3a</id>
+    </Compile>
+    <Compile Include="Recording1.UserCode.cs">
+      <BoundTo>b6c2a0e5-f33f-4af4-b7ae-65d03e79c1f8</BoundTo>
+      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1909cb6b-d836-434c-b8e0-5584cc772ead</id>
+    </Compile>
+    <Compile Include="SculptMyDreamRepository.cs">
+      <BoundTo>14b50637-25db-41cb-80e2-c3870cdc7088</BoundTo>
+      <DependentUpon>SculptMyDreamRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>d2f2722e-7e4b-4a07-92bb-45ccc998d538</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <id>8314ab46-44ae-4d70-b21c-6d6a344e84f9</id>
+    </None>
+    <None Include="Recording1.rxrec">
+      <BoundTo>14b50637-25db-41cb-80e2-c3870cdc7088</BoundTo>
+      <id>b6c2a0e5-f33f-4af4-b7ae-65d03e79c1f8</id>
+      <recordtableid>ccc11e2a-0be4-4c62-8bce-4503e4b6e1a1</recordtableid>
+    </None>
+    <None Include="SculptMyDreamRepository.rximg">
+      <BoundTo>14b50637-25db-41cb-80e2-c3870cdc7088</BoundTo>
+      <DependentUpon>SculptMyDreamRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>bc01df5d-5f91-4a6b-90d8-017e90eb539a</id>
+    </None>
+    <None Include="SculptMyDreamRepository.rxrep">
+      <id>14b50637-25db-41cb-80e2-c3870cdc7088</id>
+      <repoid>35f28358-1b11-4d80-963d-3ff1602797db</repoid>
+      <reporootid>15206195-e214-4677-88dd-61c6d1125866</reporootid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SculptMyDream.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>3c670228-f18b-4f80-b2c9-4c798dfac030</id>
+    </Content>
+    <Content Include="SculptMyDream.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>af1595db-fb08-4ff7-bd03-4ea92fe0a544</id>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>

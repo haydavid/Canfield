@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<repository
+name="SculptMyDreamRepository"
+id="35f28358-1b11-4d80-963d-3ff1602797db"
+rxversion="7.1">
+  <codegen
+  classname="SculptMyDreamRepository"
+  namespace="SculptMyDream"/>
+  <rootfolder
+  name="Root"
+  id="15206195-e214-4677-88dd-61c6d1125866"
+  searchtimeout="30000ms"
+  capname="unknown"
+  isrooted="True"
+  usecache="True">
+    <basepath/>
+  </rootfolder>
+  <variables/>
+</repository>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc
+rxversion="7.1">
+  <testsuiteentryhierarchy>
+    <flatlistofchildren>
+      <modulegroups
+      name="SculptMyDream"
+      id="cdd7192a-7426-49b0-ab9d-564251b3d201"/>
+    </flatlistofchildren>
+    <childhierarchy>
+      <modulegroups
+      name="SculptMyDream"
+      id="cdd7192a-7426-49b0-ab9d-564251b3d201"/>
+    </childhierarchy>
+  </testsuiteentryhierarchy>
+</modulegroupdoc>
